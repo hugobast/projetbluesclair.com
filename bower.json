@@ -1,0 +1,25 @@
+{
+  "name": "projetbluesclair.com",
+  "version": "1.0.0",
+  "authors": [
+    "Hugo Bastien <hugobast@gmail.com>"
+  ],
+  "description": "projetbluesclair.com",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "bourbon": "~4.2.4",
+    "zepto-detect": "*"
+  },
+  "dependencies": {
+    "neat": "~1.7.2",
+    "skrollr": "~0.6.30",
+    "picturefill": "~3.0.1"
+  }
+}
