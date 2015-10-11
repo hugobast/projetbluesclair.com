@@ -5,8 +5,51 @@
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
     <title></title>
     <link href="css/app.css" rel="stylesheet">
+    <script src="js/app.js" async></script>
   </head>
-  <body>
-    <script src="js/app.js"></script>
+  <body id="skrollr-body">
+    <section class="section1">
+      <picture>
+        <source srcset="images/slide1/slide1-768.jpg, images/slide1/slide1-768@2x.jpg 2x" media="(max-width: 768px)">
+        <source srcset="images/slide1/slide1-1024.jpg, images/slide1/slide1-1024@2x.jpg 2x" media="(max-width: 1024px)">
+        <source srcset="images/slide1/slide1-1360.jpg" media="(max-width: 1360px)">
+        <source srcset="images/slide1/slide1-1440.jpg" media="(max-width: 1440px)">
+        <source srcset="images/slide1/slide1-1680.jpg" media="(max-width: 1680px)">
+        <source srcset="images/slide1/slide1-1920.jpg" media="(max-width: 1920px)">
+
+        <img srcset="images/slide1/slide1-768.jpg" alt="">
+      </picture>
+    </section>
+
+    <section class="section2">
+      <picture>
+        <source srcset="images/slide2/slide2-768.jpg, images/slide2/slide2-768@2x.jpg 2x" media="(max-width: 768px)">
+        <source srcset="images/slide2/slide2-1024.jpg, images/slide2/slide2-1024@2x.jpg 2x" media="(max-width: 1024px)">
+        <source srcset="images/slide2/slide2-1360.jpg" media="(max-width: 1360px)">
+        <source srcset="images/slide2/slide2-1440.jpg" media="(max-width: 1440px)">
+        <source srcset="images/slide2/slide2-1680.jpg" media="(max-width: 1680px)">
+        <source srcset="images/slide2/slide2-1920.jpg" media="(max-width: 1920px)">
+
+        <img
+          data-anchor-target=".section2"
+          data-top-bottom="transform: translate3d(0px, -5%, 0px);"
+          data-bottom-top="transform: translate3d(0px, 5%, 0px);"
+
+          srcset="images/slide2/slide2-768.jpg" alt="">
+      </picture>
+    </section>
+
+    <section class="section3">
+      <picture>
+        <source srcset="images/slide3/slide3-768.jpg, images/slide3/slide3-768@2x.jpg 2x" media="(max-width: 768px)">
+        <source srcset="images/slide3/slide3-1024.jpg, images/slide3/slide3-1024@2x.jpg 2x" media="(max-width: 1024px)">
+        <source srcset="images/slide3/slide3-1360.jpg" media="(max-width: 1360px)">
+        <source srcset="images/slide3/slide3-1440.jpg" media="(max-width: 1440px)">
+        <source srcset="images/slide3/slide3-1680.jpg" media="(max-width: 1680px)">
+        <source srcset="images/slide3/slide3-1920.jpg" media="(max-width: 1920px)">
+
+        <img srcset="images/slide3/slide3-768.jpg" alt="">
+      </picture>
+    </section>
   </body>
 </html>

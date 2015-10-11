@@ -1,0 +1,40 @@
+$insane-size: -10000px;
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.section1 {
+  height: 100vw;
+  z-index: 100;
+}
+
+.section2 {
+  height: 55vw;
+  z-index: 80;
+
+  img {
+    bottom: -9600px;
+  }
+}
+
+.section3 {
+  height: 55vw;
+  z-index: 80;
+}
+
+section {
+  border-bottom: 2px solid black;
+  position: relative;
+  overflow: hidden;
+
+  img {
+    bottom: $insane-size;
+    left: $insane-size;
+    margin: auto;
+    position: absolute;
+    right: $insane-size;
+    top: $insane-size;
+  }
+}
