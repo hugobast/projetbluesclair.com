@@ -70,22 +70,23 @@ section {
 
   left: 50%;
   margin-left: -11.25em;
+  position: relative;
+  margin-top: 6em;
+  z-index: 100;
+}
+
+.symboles-horizontal {
+  @include size(18.75em 10.125em);
+  @include retina-image("../images/symboles-horizontal", 18.75em 10.125em);
+
+  left: 50%;
+  margin-left: -9.375em;
   position: absolute;
-  top: 17.5em;
   z-index: 100;
 }
 
 .section1 {
   height: $section1-height;
-
-  .symboles-vertical-placeholder {
-    @include size(22.5em 41.5625em);
-
-    left: 50%;
-    margin-left: -11.25em;
-    position: relative;
-    margin-top: 4.375em;
-  }
 
   .first-quote {
     margin-top: 7.5em;
@@ -112,15 +113,35 @@ section {
   img {
     bottom: -9600px;
   }
+
+  .margin-top {
+    margin-top: 8em;
+  }
+
+  .symboles-horizontal {
+    margin-top: 14em;
+  }
 }
 
 .section3 {
   height: $section3-height;
+
+  .margin-top {
+    margin-top: 10em;
+  }
 }
 
 .section4 {
   background-color: $orange;
   height: $section4-height;
+
+  .margin-top {
+    margin-top: 7em;
+  }
+
+  .symboles-horizontal {
+    margin-top: 8em;
+  }
 }
 
 @import 'media-queries';
