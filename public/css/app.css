@@ -1,23 +1,78 @@
+* {
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke: 1px rgba(0, 0, 0, 0.05); }
+
 body {
+  color: white;
+  font-family: Helvetica, sans-serif;
   margin: 0;
   overflow-x: hidden; }
 
+h1 {
+  font-size: 3em;
+  text-transform: uppercase; }
+
+h1 {
+  margin-bottom: 0; }
+
+h2 {
+  margin-top: 0;
+  font-weight: normal;
+  font-size: 2.4em; }
+
+.bigger {
+  font-size: 1.2em; }
+
+.center {
+  font-size: 2.2em;
+  font-weight: bold;
+  text-align: center; }
+
 .section1 {
-  height: 100vw;
+  height: 130em;
   z-index: 100; }
+  .section1 .symboles-vertical {
+    height: 41.5625em;
+    width: 22.5em;
+    background-image: url("../images/symboles-vertical.png");
+    left: 50%;
+    margin-left: -11.25em;
+    position: relative;
+    margin-top: 4.375em; }
+    @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3/1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
+      .section1 .symboles-vertical {
+        background-image: url("../images/symboles-vertical_2x.png");
+        background-size: 22.5em 41.5625em; } }
+  .section1 .first-quote {
+    margin-top: 7.5em; }
+    .section1 .first-quote .signature-straram {
+      height: 2.1875em;
+      width: 5.682em;
+      background-image: url("../images/signature-straram.png");
+      left: 50%;
+      margin-left: -2.841em;
+      position: relative;
+      margin-top: 1em; }
+      @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3/1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
+        .section1 .first-quote .signature-straram {
+          background-image: url("../images/signature-straram_2x.png");
+          background-size: 5.682em 2.1875em; } }
+  .section1 .second-quote {
+    margin-top: 13em; }
 
 .section2 {
-  height: 55vw;
-  z-index: 80; }
+  height: 67.5em; }
   .section2 img {
     bottom: -9600px; }
 
 .section3 {
-  height: 55vw;
-  z-index: 80; }
+  height: 67.5em; }
+
+article {
+  margin: 7.8125em; }
 
 section {
-  border-bottom: 2px solid black;
+  border-bottom: 1px solid black;
   position: relative;
   overflow: hidden; }
   section img {
@@ -26,4 +81,28 @@ section {
     margin: auto;
     position: absolute;
     right: -10000px;
-    top: -10000px; }
+    top: -10000px;
+    z-index: -1; }
+
+body {
+  font-size: 16px; }
+
+@media (max-width: 1680px) {
+  body {
+    font-size: 14px; } }
+
+@media (max-width: 1440px) {
+  body {
+    font-size: 12px; } }
+
+@media (max-width: 1360px) {
+  body {
+    font-size: 11.328px; } }
+
+@media (max-width: 1024px) {
+  body {
+    font-size: 8.528px; } }
+
+@media (max-width: 768px) {
+  body {
+    font-size: 6.4px; } }

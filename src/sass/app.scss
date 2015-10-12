@@ -1,18 +1,78 @@
-$insane-size: -10000px;
+@import 'bourbon';
+@import 'variables';
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke: 1px rgba(0, 0, 0, 0.05)
+}
 
 body {
+  color: white;
+  font-family: Helvetica, sans-serif;
   margin: 0;
   overflow-x: hidden;
 }
 
+h1 {
+  font-size: 3em;
+  text-transform: uppercase;
+}
+
+h1 {
+  margin-bottom: 0;
+}
+
+h2 {
+  margin-top: 0;
+  font-weight: normal;
+  font-size: 2.4em;
+}
+
+.bigger {
+  font-size: 1.2em;
+}
+
+.center {
+  font-size: 2.2em;
+  font-weight: bold;
+  text-align: center;
+}
+
 .section1 {
-  height: 100vw;
+  height: $section1-height;
   z-index: 100;
+
+  .symboles-vertical {
+    @include size(22.5em 41.5625em);
+    @include retina-image("../images/symboles-vertical", 22.5em 41.5625em);
+
+    left: 50%;
+    margin-left: -11.25em;
+    position: relative;
+    margin-top: 4.375em;
+  }
+
+  .first-quote {
+    margin-top: 7.5em;
+
+    .signature-straram {
+      @include size(5.682em 2.1875em);
+      @include retina-image("../images/signature-straram", 5.682em 2.1875em);
+
+      left: 50%;
+      margin-left: -2.841em;
+      position: relative;
+      margin-top: 1em;
+    }
+  }
+
+  .second-quote {
+    margin-top: 13em;
+  }
 }
 
 .section2 {
-  height: 55vw;
-  z-index: 80;
+  height: $section2-height;
 
   img {
     bottom: -9600px;
@@ -20,12 +80,15 @@ body {
 }
 
 .section3 {
-  height: 55vw;
-  z-index: 80;
+  height: $section3-height;
+}
+
+article {
+  margin: 7.8125em;
 }
 
 section {
-  border-bottom: 2px solid black;
+  border-bottom: 1px solid black;
   position: relative;
   overflow: hidden;
 
@@ -36,5 +99,8 @@ section {
     position: absolute;
     right: $insane-size;
     top: $insane-size;
+    z-index: -1;
   }
 }
+
+@import 'media-queries';
