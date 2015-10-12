@@ -10,15 +10,35 @@ body {
 
 h1 {
   font-size: 3em;
-  text-transform: uppercase; }
-
-h1 {
+  text-transform: uppercase;
   margin-bottom: 0; }
 
 h2 {
   margin-top: 0;
   font-weight: normal;
   font-size: 2.4em; }
+
+h3 {
+  font-size: 1.5em;
+  font-weight: normal; }
+
+article {
+  margin: 7.8125em; }
+  article .margin-top {
+    margin-top: 10em; }
+
+section {
+  border-bottom: 1px solid black;
+  position: relative;
+  overflow: hidden; }
+  section img {
+    bottom: -10000px;
+    left: -10000px;
+    margin: auto;
+    position: absolute;
+    right: -10000px;
+    top: -10000px;
+    z-index: -1; }
 
 .bigger {
   font-size: 1.2em; }
@@ -28,21 +48,29 @@ h2 {
   font-weight: bold;
   text-align: center; }
 
-.section1 {
-  height: 130em;
+.symboles-vertical {
+  height: 41.5625em;
+  width: 22.5em;
+  background-image: url("../images/symboles-vertical.png");
+  left: 50%;
+  margin-left: -11.25em;
+  position: absolute;
+  top: 17.5em;
   z-index: 100; }
-  .section1 .symboles-vertical {
+  @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3/1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
+    .symboles-vertical {
+      background-image: url("../images/symboles-vertical_2x.png");
+      background-size: 22.5em 41.5625em; } }
+
+.section1 {
+  height: 130em; }
+  .section1 .symboles-vertical-placeholder {
     height: 41.5625em;
     width: 22.5em;
-    background-image: url("../images/symboles-vertical.png");
     left: 50%;
     margin-left: -11.25em;
     position: relative;
     margin-top: 4.375em; }
-    @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3/1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
-      .section1 .symboles-vertical {
-        background-image: url("../images/symboles-vertical_2x.png");
-        background-size: 22.5em 41.5625em; } }
   .section1 .first-quote {
     margin-top: 7.5em; }
     .section1 .first-quote .signature-straram {
@@ -68,21 +96,9 @@ h2 {
 .section3 {
   height: 67.5em; }
 
-article {
-  margin: 7.8125em; }
-
-section {
-  border-bottom: 1px solid black;
-  position: relative;
-  overflow: hidden; }
-  section img {
-    bottom: -10000px;
-    left: -10000px;
-    margin: auto;
-    position: absolute;
-    right: -10000px;
-    top: -10000px;
-    z-index: -1; }
+.section4 {
+  background-color: #f36700;
+  height: 67.5em; }
 
 body {
   font-size: 16px; }

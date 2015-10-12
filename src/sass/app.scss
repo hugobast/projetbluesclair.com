@@ -16,9 +16,6 @@ body {
 h1 {
   font-size: 3em;
   text-transform: uppercase;
-}
-
-h1 {
   margin-bottom: 0;
 }
 
@@ -26,6 +23,35 @@ h2 {
   margin-top: 0;
   font-weight: normal;
   font-size: 2.4em;
+}
+
+h3 {
+  font-size: 1.5em;
+  font-weight: normal;
+}
+
+article {
+  margin: 7.8125em;
+
+  .margin-top {
+    margin-top: 10em;
+  }
+}
+
+section {
+  border-bottom: 1px solid black;
+  position: relative;
+  overflow: hidden;
+
+  img {
+    bottom: $insane-size;
+    left: $insane-size;
+    margin: auto;
+    position: absolute;
+    right: $insane-size;
+    top: $insane-size;
+    z-index: -1;
+  }
 }
 
 .bigger {
@@ -38,13 +64,22 @@ h2 {
   text-align: center;
 }
 
+.symboles-vertical {
+  @include size(22.5em 41.5625em);
+  @include retina-image("../images/symboles-vertical", 22.5em 41.5625em);
+
+  left: 50%;
+  margin-left: -11.25em;
+  position: absolute;
+  top: 17.5em;
+  z-index: 100;
+}
+
 .section1 {
   height: $section1-height;
-  z-index: 100;
 
-  .symboles-vertical {
+  .symboles-vertical-placeholder {
     @include size(22.5em 41.5625em);
-    @include retina-image("../images/symboles-vertical", 22.5em 41.5625em);
 
     left: 50%;
     margin-left: -11.25em;
@@ -83,24 +118,9 @@ h2 {
   height: $section3-height;
 }
 
-article {
-  margin: 7.8125em;
-}
-
-section {
-  border-bottom: 1px solid black;
-  position: relative;
-  overflow: hidden;
-
-  img {
-    bottom: $insane-size;
-    left: $insane-size;
-    margin: auto;
-    position: absolute;
-    right: $insane-size;
-    top: $insane-size;
-    z-index: -1;
-  }
+.section4 {
+  background-color: $orange;
+  height: $section4-height;
 }
 
 @import 'media-queries';
