@@ -7,7 +7,7 @@
 
 
 },{}],3:[function(require,module,exports){
-var skrollr;skrollr=require("./../../bower_components/skrollr/src/skrollr.js"),require("./../../bower_components/picturefill/dist/picturefill.js"),document.createElement("picture"),skrollr.init({forceHeight:!1,scale:1});
+var boostMusic,dimMusic,keyframeHandler,picturefill,playVideo,skrollr,stopVideo;picturefill=require("./../../bower_components/picturefill/dist/picturefill.js"),skrollr=require("./../../bower_components/skrollr/src/skrollr.js"),document.createElement("picture"),playVideo=function(){var e;return e=document.getElementById("video"),console.log("playing video"),e.play()},stopVideo=function(){var e;return e=document.getElementById("video"),console.log("stopping video"),e.pause()},dimMusic=function(){},boostMusic=function(){},keyframeHandler=function(e,o,r){switch(o+"-"+r){case"data100Center-down":return playVideo(),dimMusic();case"data100Center-up":return stopVideo(),boostMusic();case"data-100Center-up":return playVideo(),dimMusic();case"data-100Center-down":return stopVideo(),boostMusic()}},skrollr.init({forceHeight:!1,keyframe:keyframeHandler});
 
 
 },{"./../../bower_components/picturefill/dist/picturefill.js":1,"./../../bower_components/skrollr/src/skrollr.js":2}]},{},[3])

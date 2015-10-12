@@ -11,6 +11,7 @@ body {
   font-family: Helvetica, sans-serif;
   margin: 0;
   overflow-x: hidden;
+  background-color: $orange;
 }
 
 h1 {
@@ -39,7 +40,7 @@ article {
 }
 
 section {
-  border-bottom: 1px solid black;
+  // border-bottom: 1px solid black;
   position: relative;
   overflow: hidden;
 
@@ -136,12 +137,32 @@ section {
   height: $section4-height;
 
   .margin-top {
-    margin-top: 7em;
+    margin-top: 5em;
   }
 
   .symboles-horizontal {
     margin-top: 8em;
   }
+}
+
+.section5 {
+  height: $section5-height;
+  position: relative;
+
+  video {
+    @include transform(translateX(-50%) translateY(-50%));
+
+    height: auto;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    z-index: -100;
+  }
+}
+
+.section6 {
+  height: $section6-height;
 }
 
 @import 'media-queries';
