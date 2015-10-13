@@ -8,10 +8,20 @@
     <script src="js/app.js" async></script>
   </head>
   <body id="skrollr-body">
+    <audio id="audio" autoplay loop>
+      <source src="sounds/jazz-libre.ogg" type="audio/ogg">
+      <source src="sounds/jazz-libre.aac" type="audio/aac">
+    </audio>
+
     <section class="section1">
+      <a id="sound" href="#" onclick="toggleAudio()">
+        <i id="volume_indicator" class="icon-volume-high"></i>
+      </a>
+
       <article
         data-top="transform: translate3d(0px, 0%, 0px);"
         data-top-bottom="transform: translate3d(0px, -15%, 0px);">
+
         <h1>
           Projet Blues Clair
         </h1>

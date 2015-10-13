@@ -3,23 +3,37 @@ skrollr = require 'skrollr'
 
 document.createElement 'picture'
 
+audio = document.getElementById 'audio'
+indicator = document.getElementById 'volume_indicator'
+audio.onplay = ->
+  indicator.setAttribute 'class', 'icon-volume-high'
+
+audio.onpause = ->
+  indicator.setAttribute 'class', 'icon-volume-off'
+
+window.toggleAudio = ->
+  audio = document.getElementById 'audio'
+  if audio.paused then audio.play() else audio.pause()
+
+videoPlaying = null
+
 playVideo = ->
   video = document.getElementById 'video'
-  # video.webkitEnterFullscreen()
-
-  console.log 'playing video'
   video.play()
+  videoPlaying = true
 
 stopVideo = ->
   video = document.getElementById 'video'
-  # view.webkitExitFullscreen()
-
-  console.log 'stopping video'
   video.pause()
+  videoPlaying = false
 
 dimMusic = ->
+  audio = document.getElementById 'audio'
+  audio.volume = .3
 
 boostMusic = ->
+  audio = document.getElementById 'audio'
+  audio.volume = 1
 
 keyframeHandler = (element, name, direction) ->
   switch "#{name}-#{direction}"
