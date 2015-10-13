@@ -163,6 +163,15 @@ section {
 
 .section6 {
   height: $section6-height;
+
+  .margin-top {
+    margin-top: 12em;
+  }
+
+  .margin-bottom {
+    display: block;
+    margin-bottom: 1em;
+  }
 }
 
 @import 'media-queries';

@@ -134,6 +134,11 @@ section {
 
 .section6 {
   height: 74em; }
+  .section6 .margin-top {
+    margin-top: 12em; }
+  .section6 .margin-bottom {
+    display: block;
+    margin-bottom: 1em; }
 
 body {
   font-size: 16px; }
