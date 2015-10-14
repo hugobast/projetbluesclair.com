@@ -4,6 +4,8 @@ body {
   font-size: 16px;
 }
 
+@media (max-width: 2560px) { body { font-size: 16px * $scale-2560; } }
+@media (max-width: 2200px) { body { font-size: 16px * $scale-2200; } }
 @media (max-width: 1920px) { body { font-size: 16px * $scale-1920; } }
 @media (max-width: 1680px) { body { font-size: 16px * $scale-1680; } }
 @media (max-width: 1440px) { body { font-size: 16px * $scale-1440; } }

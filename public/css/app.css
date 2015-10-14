@@ -263,6 +263,14 @@ section {
 body {
   font-size: 16px; }
 
+@media (max-width: 2560px) {
+  body {
+    font-size: 21.328px; } }
+
+@media (max-width: 2200px) {
+  body {
+    font-size: 18.4px; } }
+
 @media (max-width: 1920px) {
   body {
     font-size: 16px; } }
