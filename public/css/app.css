@@ -150,6 +150,7 @@ section {
   height: 41.5625em;
   width: 22.5em;
   background-image: url("../images/symboles-vertical.png");
+  background-size: 22.5em 41.5625em;
   left: 50%;
   margin-left: -11.25em;
   position: relative;
@@ -164,6 +165,7 @@ section {
   height: 10.125em;
   width: 18.75em;
   background-image: url("../images/symboles-horizontal.png");
+  background-size: 18.75em 10.125em;
   left: 50%;
   margin-left: -9.375em;
   position: absolute;
@@ -198,6 +200,7 @@ section {
     .section1 .first-quote .signature-straram {
       height: 2.1875em;
       width: 5.682em;
+      background-size: 5.682em 2.1875em;
       background-image: url("../images/signature-straram.png");
       left: 50%;
       margin-left: -2.841em;

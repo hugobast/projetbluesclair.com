@@ -90,6 +90,7 @@ section {
 .symboles-vertical {
   @include size(22.5em 41.5625em);
   @include retina-image("../images/symboles-vertical", 22.5em 41.5625em);
+  background-size: 22.5em 41.5625em;
 
   left: 50%;
   margin-left: -11.25em;
@@ -101,6 +102,7 @@ section {
 .symboles-horizontal {
   @include size(18.75em 10.125em);
   @include retina-image("../images/symboles-horizontal", 18.75em 10.125em);
+  background-size: 18.75em 10.125em;
 
   left: 50%;
   margin-left: -9.375em;
@@ -128,6 +130,7 @@ section {
 
     .signature-straram {
       @include size(5.682em 2.1875em);
+      background-size: 5.682em 2.1875em;
       @include retina-image("../images/signature-straram", 5.682em 2.1875em);
 
       left: 50%;
