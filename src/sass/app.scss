@@ -42,6 +42,7 @@ article {
 
 section {
   // border-bottom: 1px solid black;
+  border-bottom: 1px solid black;
   position: relative;
   overflow: hidden;
 
@@ -56,7 +57,11 @@ section {
   }
 }
 
-#sound {
+.fwn {
+  font-weight: normal;
+}
+
+#sound, #play {
   position: absolute;
   top: 7.8125em;
   right: 7.8125em;
@@ -102,6 +107,18 @@ section {
   position: absolute;
   z-index: 100;
 }
+
+.blowup {
+  @include transition(all 4.0s $ease-out-circ);
+  @include transform(scale(.3));
+  opacity: 0;
+
+  &.active {
+    @include transform(scale(1));
+    opacity: 1;
+  }
+}
+
 
 .section1 {
   height: $section1-height;
@@ -165,6 +182,7 @@ section {
 .section5 {
   height: $section5-height;
   position: relative;
+  border-top: 1px solid black;
 
   video {
     @include transform(translateX(-50%) translateY(-50%));

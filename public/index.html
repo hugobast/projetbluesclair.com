@@ -14,7 +14,7 @@
     </audio>
 
     <section class="section1">
-      <a id="sound" href="#" onclick="toggleAudio()">
+      <a id="sound" href="javascript:void(0);" onclick="toggleAudio()">
         <i id="volume_indicator" class="icon-volume-high"></i>
       </a>
 
@@ -33,16 +33,17 @@
         <div
           data-anchor-target=".section1"
           data-top="transform: translate3d(0px, 0%, 0px) scale(1); opacity: 1"
-          data-top-bottom="transform: translate3d(0px, 200%, 0px) scale(1.5); opacity: 0;"
+          data-top-bottom="transform: translate3d(0px, 200%, 0px) scale(1.5); opacity: -1;"
           class="symboles-vertical"></div>
 
-        <div class="first-quote center">
+        <div data-bottom-top data-top-bottom data-emit-events
+          class="blowup first-quote center">
           « Ces réflexions sont celles d’un écrivain/écrivant qui pense<br /> la problématique ‘‘culturel/politique’’ capitale »
 
           <div class="signature-straram"></div>
         </div>
 
-        <div class="second-quote center">
+        <div data-bottom-top data-top-bottom data-emit-events class="blowup second-quote center">
           <span class="bigger"><em>La révolution, comme l’amour, est à réinventer</em></span><br />
           - Henri Lefebvre
         </div>
@@ -66,7 +67,7 @@
           Définition SOCRA/CRI/TIQUE
         </h3>
 
-        <div class="margin-top center">
+        <div data-bottom-top data-top-bottom data-emit-events class="blowup margin-top center">
           <span>Le projet contre-culturel est intéressant : la production d’une différence, transgressant les codes établis et irréductibles aux entreprises de réification par lesquelles se maintiennent au pouvoir les classes dirigeantes qui ignorantisent et manipulent pour borner au gain et à la consommation dans un système capitaliste.</span>
         </div>
 
@@ -93,9 +94,9 @@
     <section class="section3">
       <article>
         <div class="margin-top center">
-          <p>La contre-culture ne peut se développer qu’en marge du réel, et pour se suffire hors le réel, doit avoir recours à mystique et anarchie, qui à long terme l’éliminent, certains de ses aspects récupérés et les autres abolis.</p>
-          <p>[…]</p>
-          <p>La survie de groupuscules contre-culturels qui ne remettent pas en question la propriété privée des moyens de production […] dépend de ce que peut y investir le monde des affaires.</p>
+          <p class="blowup" data-bottom-top data-top-bottom data-emit-events>La contre-culture ne peut se développer qu’en marge du réel, et pour se suffire hors le réel, doit avoir recours à mystique et anarchie, qui à long terme l’éliminent, certains de ses aspects récupérés et les autres abolis.</p>
+          <p class="fwn">[…]</p>
+          <p class="blowup" data-bottom-top data-top-bottom data-emit-events>La survie de groupuscules contre-culturels qui ne remettent pas en question la propriété privée des moyens de production […] dépend de ce que peut y investir le monde des affaires.</p>
         </div>
       </article>
 
@@ -119,9 +120,9 @@
     <section class="section4">
       <article>
         <div class="margin-top center">
-          <p>Leaders et suiveurs de la contre-culture ne pensaient qu’à leur ego et de chimériques au-delàs. Ils se méfiaient des politiques, et les politiques n’avaient pas l’intention d’entamer un dialogue avec ces illuminés facilement des agents provocateurs au service des forces de l’ordre. Les politiques n’ont rien compris.</p>
-          <p>[…]</p>
-          <p>Pierre Maheu est particulièrement nocif, à la fois influent dans le secteur cinéma/télévision « progressiste », principal responsable d’une « commune » : il a fait un film incroyablement pourri, Le Bonhomme…</p>
+          <p class="blowup" data-bottom-top data-top-bottom data-emit-events>Leaders et suiveurs de la contre-culture ne pensaient qu’à leur ego et de chimériques au-delàs. Ils se méfiaient des politiques, et les politiques n’avaient pas l’intention d’entamer un dialogue avec ces illuminés facilement des agents provocateurs au service des forces de l’ordre. Les politiques n’ont rien compris.</p>
+          <p class="fwn">[…]</p>
+          <p class="blowup" data-bottom-top data-top-bottom data-emit-events>Pierre Maheu est particulièrement nocif, à la fois influent dans le secteur cinéma/télévision « progressiste », principal responsable d’une « commune » : il a fait un film incroyablement pourri, Le Bonhomme…</p>
         </div>
 
         <div class="symboles-horizontal"></div>
@@ -134,6 +135,10 @@
       data-emit-events
       class="section5 video full-screen">
 
+      <a id="play" href="javascript:void(0);" onclick="toggleVideo()">
+        <i id="video_indicator" class="icon-play"></i>
+      </a>
+
       <video id="video" loop poster="images/video-cover.jpg">
         <source src="videos/extrait-video.webm" type="video/webm">
         <source src="videos/extrait-video.ogv" type="video/ogg">
@@ -144,9 +149,9 @@
     <section class="section6">
       <article>
         <div class="margin-top center">
-          <p><em class="bigger">La barbarie ne provient pas de la barbarie, mais des affaires.</em><br />– Brecht</p>
+          <p class="blowup" data-bottom-top data-top-bottom data-emit-events><em class="bigger">La barbarie ne provient pas de la barbarie, mais des affaires.</em><br />– Brecht</p>
 
-          <p>
+          <p class="blowup" data-bottom-top data-top-bottom data-emit-events>
             <span class="margin-bottom">Contre-culture = agent de barbarie</span>
             Contre-culture = mythe<br />
             Contre-culture = danger<br />
@@ -155,7 +160,7 @@
             Contre-culture = église
           </p>
 
-          <p class="margin-bottom">Il n’y a de choix utile que celui du politique […]<br /> qui s’articule désormais en fonction de sujet et culture</p>
+          <p class="blowup" data-bottom-top data-top-bottom data-emit-events class="margin-bottom">Il n’y a de choix utile que celui du politique […]<br /> qui s’articule désormais en fonction de sujet et culture</p>
         </div>
       </article>
 

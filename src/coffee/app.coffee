@@ -1,19 +1,33 @@
 picturefill = require 'picturefill'
 skrollr = require 'skrollr'
+zepto = require 'zepto'
 
 document.createElement 'picture'
 
 audio = document.getElementById 'audio'
-indicator = document.getElementById 'volume_indicator'
+audioIndicator = document.getElementById 'volume_indicator'
 audio.onplay = ->
-  indicator.setAttribute 'class', 'icon-volume-high'
+  audioIndicator.setAttribute 'class', 'icon-volume-high'
 
 audio.onpause = ->
-  indicator.setAttribute 'class', 'icon-volume-off'
+  audioIndicator.setAttribute 'class', 'icon-volume-off'
+
+
+video = document.getElementById 'video'
+videoIndicator = document.getElementById 'video_indicator'
+video.onplay = ->
+  videoIndicator.setAttribute 'class', 'icon-pause'
+
+video.onpause = ->
+  videoIndicator.setAttribute 'class', 'icon-play'
 
 window.toggleAudio = ->
   audio = document.getElementById 'audio'
   if audio.paused then audio.play() else audio.pause()
+
+window.toggleVideo = ->
+  video = document.getElementById 'video'
+  if video.paused then playVideo() else stopVideo()
 
 videoPlaying = null
 
@@ -36,6 +50,24 @@ boostMusic = ->
   audio.volume = 1
 
 keyframeHandler = (element, name, direction) ->
+  handlePopElements element, name, direction
+  handleVideo element, name, direction
+
+handlePopElements = (element, name, direction) ->
+  switch "#{name}-#{direction}"
+    when 'dataBottomTop-down'
+      $(element).addClass 'active'
+
+    when 'dataTopBottom-down'
+      $(element).removeClass 'active'
+
+    when 'dataBottomTop-up'
+      $(element).removeClass 'active'
+
+    when 'dataTopBottom-up'
+      $(element).addClass 'active'
+
+handleVideo = (element, name, direction) ->
   switch "#{name}-#{direction}"
     when 'data100Center-down'
       playVideo()

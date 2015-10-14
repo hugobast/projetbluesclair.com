@@ -112,6 +112,7 @@ article {
     margin-top: 10em; }
 
 section {
+  border-bottom: 1px solid black;
   position: relative;
   overflow: hidden; }
   section img {
@@ -123,15 +124,18 @@ section {
     top: -10000px;
     z-index: -1; }
 
-#sound {
+.fwn {
+  font-weight: normal; }
+
+#sound, #play {
   position: absolute;
   top: 7.8125em;
   right: 7.8125em;
   color: white;
   z-index: 1000; }
-  #sound:active {
+  #sound:active, #play:active {
     color: #e6e6e6; }
-  #sound i {
+  #sound i, #play i {
     font-size: 3em; }
 
 .bigger {
@@ -168,6 +172,24 @@ section {
     .symboles-horizontal {
       background-image: url("../images/symboles-horizontal_2x.png");
       background-size: 18.75em 10.125em; } }
+
+.blowup {
+  -webkit-transition: all 4s cubic-bezier(0.075, 0.82, 0.165, 1);
+  -moz-transition: all 4s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: all 4s cubic-bezier(0.075, 0.82, 0.165, 1);
+  -webkit-transform: scale(0.3);
+  -moz-transform: scale(0.3);
+  -ms-transform: scale(0.3);
+  -o-transform: scale(0.3);
+  transform: scale(0.3);
+  opacity: 0; }
+  .blowup.active {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+    opacity: 1; }
 
 .section1 {
   height: 130em; }
@@ -212,7 +234,8 @@ section {
 
 .section5 {
   height: 74em;
-  position: relative; }
+  position: relative;
+  border-top: 1px solid black; }
   .section5 video {
     -webkit-transform: translateX(-50%) translateY(-50%);
     -moz-transform: translateX(-50%) translateY(-50%);
